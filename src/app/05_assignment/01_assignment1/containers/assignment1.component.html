@@ -9,12 +9,12 @@
   </ul>
   <div class="container your-code">
     <br>
+    <label>Enter Anything in textbox </label>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-    <input type="text" class="form-control" #textInput>
-    <button type="button" id="btn" class="btn btn-secondary"(click)="show(textInput)">Show</button>
+    <input type="text" class="form-control" (input)="onType(textInput.value)" #textInput>
   </div>
 </div>
-    <p>{{show(textInput)}}</p>
+    <p>Result:- {{ inputValue }}</p>
   </div>
 </div>
