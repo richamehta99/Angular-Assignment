@@ -18,8 +18,7 @@
         </tr>
       </thead>
       <tbody class="todoTable">
-        <tr *ngFor="let todo of todos" [class.selected]="todo === selectedTodo"
-        (click)="onSelect(todo)">
+        <tr *ngFor="let todo of todos" (click)="onSelect(todo)" [ngClass]="{active: isActive(todo)}"> 
           <td>{{ todo.id }}</td>
           <td>{{ todo.type }}</td>
           <td>{{ todo.description }}</td>

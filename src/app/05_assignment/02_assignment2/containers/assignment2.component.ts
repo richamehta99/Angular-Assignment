@@ -15,4 +15,7 @@ export class Assignment2Component {
   onSelect(todo: Todo): void {
     this.selectedTodo = todo;
   }
+  isActive(todo:Todo) {
+    return this.selectedTodo === todo;
+};
 }
