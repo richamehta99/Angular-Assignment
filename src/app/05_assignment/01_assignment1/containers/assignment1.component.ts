@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment1.component.css']
 })
 export class Assignment1Component {
-  show(first: HTMLInputElement){
-    return first.value;
+  show(text: HTMLInputElement){
+    return text.value;
 }
 }
